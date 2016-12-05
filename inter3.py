@@ -18,7 +18,6 @@ xnew = np.linspace(0, 100, num=1000, endpoint=True)
 #print "xnew.shape: ", xnew.shape
 
 
-"""
 start= time.clock()
 ynew = sp.interpolate.interp1d(x,y,kind='linear')(xnew)
 end= time.clock()
@@ -27,7 +26,8 @@ print "spline linear total time: ", total
 print "ynew: ", ynew
 print "mean: ", np.mean(ynew)
 print " "
-"""
+
+
 start= time.clock()
 ynew = sp.interpolate.interp1d(x,y,kind='cubic')(xnew)
 end= time.clock()
